@@ -28,17 +28,40 @@ header {
     max-width: 100%;
     height: auto;
   }
+
+  header .logo a img {
+    max-height: 100px;
+    @include for-desktop-up {    
+      max-height: 120px;
+   }
+    @include for-phone-only {    
+      max-height: 80px;
+   }
+  }
+
+  header .logo a h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:15px;
+    margin-bottom:15px;
+  }
   
   header .logo a:hover, header .logo a:active {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0,0,0);
+    filter: invert(1);
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    //background-color: rgb(255, 255, 255);
+    //color: rgb(0,0,0);
   }
 
 header cite {
   font-style: normal;
 }
 
-nav {
+nav.main-nav {
     padding-left: 10px;
     padding-right: 10px;
     z-index: 1;
@@ -63,17 +86,17 @@ nav {
    }
   }
   
-  nav a {
+  nav.main-nav a {
     text-decoration: none;
     color: white;
     margin-right: 30px;
   }
   
-  nav a:last-child {
+  nav.main-nav a:last-child {
     margin-right: 0px;
   }
   
-  nav a:hover, nav a:active, nav a.current-nav {
+  nav.main-nav a:hover, nav.main-nav a:active, nav.main-nav a.current-nav {
     background-color: rgb(255, 255, 255);
     color: rgb(0,0,0);
   }
