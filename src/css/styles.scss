@@ -131,6 +131,11 @@ footer nav li:nth-child(1)::marker {
   content: "";
 }
 
+.clip-path-image {
+  height:100px;
+  width:100%;
+  clip-path: url(#svgPath);
+}
 
 main h2 {
   font-size: 1.8em;
