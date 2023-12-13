@@ -31,12 +31,12 @@
   }
 
   .container>header .logo a img {
-    max-height: 100px;
+    height: 100px;
     @include for-desktop-up {    
-      max-height: 120px;
+      height: 120px;
    }
     @include for-phone-only {    
-      max-height: 80px;
+      height: 80px;
    }
   }
 
