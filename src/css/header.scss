@@ -1,8 +1,8 @@
-header {
+.container>header {
     margin: 10px;
   }
   
-  header .logo {
+  .container>header .logo {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ header {
     text-align: center;
   }
   
-  header .logo a {
+  .container>header .logo a {
     text-decoration: none;
     color: white;
     outline:none;
@@ -27,9 +27,10 @@ header {
     border-bottom: none;
     max-width: 100%;
     height: auto;
+    transition: background-color 1s cubic-bezier(.19,1,.22,1);
   }
 
-  header .logo a img {
+  .container>header .logo a img {
     max-height: 100px;
     @include for-desktop-up {    
       max-height: 120px;
@@ -39,7 +40,7 @@ header {
    }
   }
 
-  header .logo a h1 {
+  .container>header .logo a h1 {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -49,7 +50,7 @@ header {
     margin-bottom:15px;
   }
   
-  header .logo a:hover, header .logo a:active {
+  .container>header .logo a:hover, .container>header .logo a:active {
     filter: invert(1);
     background-color: rgb(0,0,0);
     color: rgb(255, 255, 255);
@@ -57,7 +58,7 @@ header {
     //color: rgb(0,0,0);
   }
 
-header cite {
+  .container>header cite {
   font-style: normal;
 }
 
@@ -68,7 +69,6 @@ nav.main-nav {
     position: sticky;
     top: 0;
     background-color: rgb(0, 0, 0);
-    
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -90,6 +90,7 @@ nav.main-nav {
     text-decoration: none;
     color: white;
     margin-right: 30px;
+    transition: background-color 1s cubic-bezier(.19,1,.22,1);
   }
   
   nav.main-nav a:last-child {
