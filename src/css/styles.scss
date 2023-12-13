@@ -161,7 +161,7 @@ main .typewrite h2 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2s steps(30, end),
+    typing 1.5s steps(25, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -177,12 +177,70 @@ main .typewrite h2 {
   50% { border-color: white; }
 }
 
-main figure.svg  {
+main figure.animated-svg  {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
+main figure.animated-svg svg {
+  margin-bottom: 5px;
+}
+
+#triangle #inside-trig {
+  animation: inside-trig-morph 1s linear .1s infinite;
+  transform-origin: center;
+  animation-play-state: playing;
+}
+
+#triangle #inside-trig:hover {
+  animation-play-state: paused;
+}
+
+@keyframes inside-trig-morph {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(0);
+  }
+}
+
+/*#loading-bar {
+  &-left {
+    animation: loading-bar-morph 1s linear .1s infinite;
+    transform-origin: center;
+  }
+  &-middle {
+    animation: loading-bar-morph 1s linear .2s infinite;
+    transform-origin: center;
+  }
+  &-right {
+    animation: loading-bar-morph 1s linear .4s infinite;
+    transform-origin: center;
+  }
+}
+@keyframes loading-bar-morph {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.7);
+  }
+  75% {
+    transform: scaleY(0.15);
+  }
+}*/
 
 main a, footer a {
   transition: background-color 1s cubic-bezier(.19,1,.22,1);
