@@ -105,6 +105,7 @@ footer .footer-logo {
 
 footer .footer-logo img {
   height: 64px;
+  max-height: 64px;
 }
 
 footer nav {
@@ -132,7 +133,7 @@ footer nav li:nth-child(1)::marker {
 }
 
 .clip-path-image {
-  height:100px;
+  max-height:250px;
   width:100%;
   clip-path: url(#svgPath);
 }
@@ -212,35 +213,6 @@ main figure.animated-svg svg {
     transform: scale(0);
   }
 }
-
-/*#loading-bar {
-  &-left {
-    animation: loading-bar-morph 1s linear .1s infinite;
-    transform-origin: center;
-  }
-  &-middle {
-    animation: loading-bar-morph 1s linear .2s infinite;
-    transform-origin: center;
-  }
-  &-right {
-    animation: loading-bar-morph 1s linear .4s infinite;
-    transform-origin: center;
-  }
-}
-@keyframes loading-bar-morph {
-  0% {
-    transform: scaleY(1);
-  }
-  25% {
-    transform: scaleY(0.3);
-  }
-  50% {
-    transform: scaleY(0.7);
-  }
-  75% {
-    transform: scaleY(0.15);
-  }
-}*/
 
 main a, footer a {
   transition: background-color 1s cubic-bezier(.19,1,.22,1);

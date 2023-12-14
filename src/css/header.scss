@@ -32,11 +32,14 @@
 
   .container>header .logo a img {
     height: 100px;
+    max-height: 100px;
     @include for-desktop-up {    
       height: 120px;
+      max-height: 120px;
    }
     @include for-phone-only {    
       height: 80px;
+      max-height: 80px;
    }
   }
 
