@@ -14,15 +14,25 @@
   <div class="container">
     <include src="src/header.html"></include>
     <main class="detalle">
-      <header class="typewrite"><h2>Ficha de personaje: Batou</h2></header>
-      <figure><img src="./img/detalle_personaje.png" alt="Imágen de personaje">
-        <figcaption>Imágen de personaje</figcaption>
+      <header><h2>Ficha de personaje: Batou</h2></header>
+      <figure class="wide">
+        <picture>
+          <source srcset="./img/detalle_2.jpg?as=avif&height=900" media="(min-width: 900px)" type="image/avif" />
+          <source srcset="./img/detalle_2.jpg?as=avif&height=600" media="(min-width: 600px)" type="image/avif" />
+          <source srcset="./img/categoria_2.jpg?as=avif&height=350" media="(min-width: 350px)" type="image/avif" />
+          <img class="destacada" src="./img/categoria_2.jpg?height=350" alt="Foto de roman raizen en Unsplash">
+        </picture>
+        <figcaption>Imágen destacada (Foto ilustrativa de roman raizen en Unsplash)</figcaption>
       </figure>
       <p><b>Batou</b> es uno de los personajes principales en los animes y mangas de <cite lang="en">Ghost in the
           Shell</cite>. Es uno de los
         mejores y más hábiles combatientes de la <b>Sección 9</b>, y es el tercero al mando tras Aramaki y la mayor <a
           href="detalle_1.html">Motoko Kusanagi</a>.</p>
       <h3>Características</h3>
+      <div class="caracter">
+        <figure><img src="./img/ficha_personaje.svg" alt="Ficha de personaje">
+          <figcaption>Ficha de personaje</figcaption>
+        </figure>
       <ul>
         <li><b>Sexo:</b> Masculino</li>
         <li><b>Primera aparición:</b> <cite lang="en">Ghost in the Shell (Manga, 1989)</cite></li>
@@ -30,6 +40,7 @@
         <li><b>Ocupacion:</b> Instructor de reclutas, fuerza de choque y tercero al mando de la Sección 9.</li>
         <li><b>Procedencia:</b> Japón</li>
       </ul>
+    </div>
       <h3>Personalidad</h3>
       <p>La caracterización de Batou en el manga, y de los demás miembros de la Sección 9, es de un personaje más
         símpático que en las películas del mismo nombre. Batou bromea frecuentemente con <a
@@ -38,6 +49,15 @@
         homólogos del manga y la serie
         de anime. Especialmente en <cite lang="en">Ghost in the Shell 2: Innocence</cite>, Batou aparece aún más
         distante y reservado.</p>
+        <figure class="wide">
+          <picture>
+            <source srcset="./img/detalle_2_2_wide.jpg?as=webp&height=900" media="(min-width: 900px)" type="image/webp" />
+            <source srcset="./img/detalle_2_2_wide.jpg?as=webp&height=600" media="(min-width: 600px)" type="image/webp" />
+            <source srcset="./img/detalle_2_2_tall.jpg?as=webp&height=350" media="(min-width: 350px)" type="image/webp" />
+            <img class="extra" src="./img/detalle_2_2_tall.jpg?height=350" alt="Foto de Francois Hoang en Unsplash">
+          </picture>
+          <figcaption>Paisaje cyberpunk ilustrativo (Foto de Francois Hoang en Unsplash)</figcaption>
+        </figure>
       <h3>Manga <cite lang="en">Ghost in the Shell</cite></h3>
       <p>Batou apareció originalmente en el manga escrito por <b>Masamune Shirow</b> de 1989 a 1991. Su aspecto y el
         estilo de
