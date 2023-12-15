@@ -132,10 +132,18 @@ footer nav li:nth-child(1)::marker {
   content: "";
 }
 
+.clip-path-figure {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .clip-path-image {
-  max-height:250px;
-  width:100%;
+  height:200px;
+  width:350px;
   clip-path: url(#svgPath);
+
+
 }
 
 main h2 {
@@ -191,6 +199,16 @@ main figure.animated-svg  {
 
 main figure.animated-svg svg {
   margin-bottom: 5px;
+  height: 200px;
+    max-height: 200px;
+    @include for-desktop-up {    
+      height: 220px;
+      max-height: 220px;
+   }
+    @include for-phone-only {    
+      height: 150px;
+      max-height: 150px;
+   }
 }
 
 #triangle #inside-trig {

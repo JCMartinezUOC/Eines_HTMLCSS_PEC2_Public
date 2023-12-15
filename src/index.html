@@ -17,11 +17,12 @@
       <header class="typewrite">
         <h2>Portada</h2>
       </header>
-      <picture>
-        <source srcset="./img/clipped.jpg?as=webp&height=800" media="(min-width: 800px)" type="image/webp" />
-        <source srcset="./img/clipped.jpg?as=webp&height=600" media="(min-width: 600px)" type="image/webp" />
-        <source srcset="./img/clipped.jpg?as=webp&height=350" media="(min-width: 350px)" type="image/webp" />
-        <img class="clip-path-image" src="./img/clipped.jpg?height=350" alt="Foto de Sandro Katalina en Unsplash">
+      <picture class="clip-path-figure">
+        <img
+          class="clip-path-image"
+          srcset="./img/clipped.jpg?as=webp&width=350, ./img/clipped.jpg?as=webp&width=600 2x, ./img/clipped.jpg?as=webp&width=800 3x"
+          src="./img/clipped.jpg?width=350"
+          alt="Foto de Sandro Katalina en Unsplash" />
       </picture>
       <p><cite lang="en">Ghost in the Shell</cite> es una franquicia japonesa de ciencia ficción <i>cyberpunk</i> basada
         en la serialización manga del mismo nombre escrita e ilustrada por <b>Masamune Shirow</b>. El manga narra la
