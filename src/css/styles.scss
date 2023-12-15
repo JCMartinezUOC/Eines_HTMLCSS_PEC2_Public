@@ -159,15 +159,15 @@ main figure.animated-svg  {
 
 main figure.animated-svg svg {
   margin-bottom: 5px;
+  width: 200px;
   height: 200px;
-    max-height: 200px;
-    @include for-desktop-up {    
+    @include for-desktop-up {  
+      width: 220px;  
       height: 220px;
-      max-height: 220px;
    }
-    @include for-phone-only {    
+    @include for-phone-only { 
+      width: 150px;  
       height: 150px;
-      max-height: 150px;
    }
 }
 
