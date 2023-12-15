@@ -79,13 +79,13 @@ nav.main-nav {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 25px;
     //margin: 0 auto;
     padding-bottom: 30px;
     //background-color: rgb(255, 255, 255);
   
     @include for-phone-only {    
-      font-size: 1.15rem;
+      font-size: 1rem;
    }
   }
   
