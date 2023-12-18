@@ -171,7 +171,7 @@ main figure.animated-svg svg {
 .triangle .inside-trig {
   animation: inside-trig-morph 1s linear .1s infinite;
   transform-origin: center;
-  animation-play-state: playing;
+  animation-play-state: running;
 }
 
 .triangle .inside-trig:hover {
